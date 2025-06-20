@@ -1,0 +1,90 @@
+{
+    "OneView": {
+        "OV version": "9.40.00-0505446,2025-03-06T14:25:56+0000",
+        "OV Type": "HPE OneView VM - KVM"
+    },
+    "Server": {
+        "UUID": "00323147-0000-5A43-3438-525030303931",
+        "Gen": "Gen12",
+        "iLO Model": "iLO 7",
+        "OS": "SLES",
+        "OsVersion": "12.2",
+        "SUT Mode": "autoDeployReboot",
+        "SUT Service State": "Running",
+        "SUT Running Version": "6.0.0.0"
+    },
+    "Firmware Update": {
+        "SPP Used": "Gen12SPP2025030000_2025_0301_28",
+        "Installation Method": "offline",
+        "SUT Mode": "autoDeployReboot",
+        "SUT Service State": "Running",
+        "SUT Running Version": "6.0.0.0",
+        "Policy": "LowerThanBaseline",
+        "Install state": "",
+        "Force": "False"
+    },
+    "Install set Response": {
+        "SPP": "bp007577",
+        "Retry": "No",
+        "Dependency": "Service pack for HPE ProLiant Gen12",
+        "SUM Version": "sum service"
+    },
+    "Components": [
+        {
+            "Installed Version": "1.11.00",
+            "To Version": "1.11.00",
+            "DeviceClass": "",
+            "TargetGUID": "fb2b2f91-c952-4288-8389-21dee30e0307",
+            "FileName": "ilo7_1.11.00_p26.fwpkg"
+        },
+        {
+            "Installed Version": "U68 1.20  - (02/14/2025)",
+            "To Version": "U68 1.20 - (02/14/2025)",
+            "DeviceClass": "",
+            "TargetGUID": "00000000-0000-0000-0000-000000000267",
+            "FileName": "U68_1.20_02_14_2025.fwpkg"
+        },
+        {
+            "Installed Version": "52.30.3-5917",
+            "To Version": "52.30.3-5917",
+            "DeviceClass": "",
+            "TargetGUID": "a6b1a447-382a-5a4f-1000-10e2159003c8",
+            "FileName": "HPE_MR408i-o_Gen11_52.30.3-5917_B.fwpkg"
+        },
+        {
+            "Installed Version": "1.00",
+            "To Version": "1.04",
+            "DeviceClass": "",
+            "TargetGUID": "9675b54e-1c96-44c3-a7a1-901506000000",
+            "FileName": "HPE_UBM6_1.04_C.fwpkg"
+        },
+        {
+            "Installed Version": "6.0.0-118.linux",
+            "To Version": "6.0.0-118.linux",
+            "DeviceClass": "",
+            "TargetGUID": "20a6e8e4-bf33-4c71-a6bf-d9ece09b5689",
+            "FileName": "sut-6.0.0-118.linux.x86_64.rpm"
+        },
+        {
+            "Installed Version": "",
+            "To Version": "008.010.012.000-00",
+            "DeviceClass": "",
+            "TargetGUID": "20a6e8e4-bf33-4c71-a6bf-d9ec7b3f1da5",
+            "FileName": "MRStorageAdministrator-008.010.012.000-00.x86_64.rpm"
+        },
+        {
+            "Installed Version": "4.0.0-1959.63.rhel9",
+            "To Version": "4.0.0-1959.63.rhel9",
+            "DeviceClass": "",
+            "TargetGUID": "20a6e8e4-bf33-4c71-a6bf-d9ecb37bf5ae",
+            "FileName": "amsd-4.0.0-1959.63.rhel9.x86_64.rpm"
+        },
+        {
+            "Installed Version": "",
+            "To Version": "007.3011.0000.0000-1",
+            "DeviceClass": "",
+            "TargetGUID": "20a6e8e4-bf33-4c71-a6bf-d9ecfb6553be",
+            "FileName": "storcli-007.3011.0000.0000-1.noarch.rpm"
+        }
+    ]
+}

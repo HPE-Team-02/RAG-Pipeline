@@ -1,0 +1,41 @@
+{
+    "OneView": {
+        "OV version": "9.40.00-0504576,2025-02-15T02:27:30+0000",
+        "OV Type": "Synergy Composer2"
+    },
+    "Server": {
+        "UUID": "39313738-3634-584D-5138-313030333744",
+        "Gen": "Gen11",
+        "iLO Model": "iLO 6",
+        "OS": "VMware ESXi",
+        "OsVersion": "9.0.0 Build-24493215",
+        "SUT Mode": "autodeployreboot",
+        "SUT Service State": "Stopped",
+        "SUT Running Version": "5.2.0."
+    },
+    "Firmware Update": {
+        "SPP Used": "SSPSY-2510_2025_0205_43",
+        "Installation Method": "online",
+        "SUT Mode": "autodeployreboot",
+        "SUT Service State": "Stopped",
+        "SUT Running Version": "5.2.0.",
+        "Policy": "Exact Match",
+        "Install state": "",
+        "Force": "True"
+    },
+    "Install set Response": {
+        "SPP": "bp007373",
+        "Retry": "No",
+        "Dependency": "HPE Synergy Service Pack",
+        "SUM Version": "sum service"
+    },
+    "Components": [
+        {
+            "Installed Version": "3.09",
+            "To Version": "3.11",
+            "DeviceClass": "",
+            "TargetGUID": "4764a662-b342-4fc7-9ce9-258c5d99e815",
+            "FileName": "ilo5_311_p07.fwpkg"
+        }
+    ]
+}

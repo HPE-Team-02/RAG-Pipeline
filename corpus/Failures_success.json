@@ -1,0 +1,203 @@
+{
+  "firmware_update_logs": {
+    "failures": [
+      {
+        "failure_type": "CSFE-64399_ilo_component_failure",
+        "server_uuid": "39313738-3634-584D-5138-313030333744",
+        "component": "ilo5_311_p07.fwpkg",
+        "baseline": "/rest/firmware-drivers/SSPSY-2510_2025_0205_43",
+        "timestamp": "2025-02-13 07:23:13.401 UTC",
+        "error_details": {
+          "state": "Exception",
+          "task_result": "UpdateFailed",
+          "message_id": "iLO.2.0.UpdateFailed",
+          "message_args": ["50"]
+        },
+        "task_queue_info": {
+          "task_id": "f818497a",
+          "command": "ApplyUpdate",
+          "filename": "ilo5_311_p07.fwpkg",
+          "name": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 5",
+          "execution_timeout_minutes": 10,
+          "updatable_by": ["Bmc"],
+          "created": "2025-02-13T07:21:48Z",
+          "modified": "2025-02-13T07:22:38Z"
+        }
+      },
+      {
+        "failure_type": "CSFE-65426_baseline_add_to_SUM_failure_install_set_generation_failed",
+        "server_uuid": "39313738-3534-584D-5138-323430355757",
+        "baseline": "Z7550_97877_SYR-2024_31-SSPSY-20241102_2024_1108_9",
+        "timestamp": "2025-02-19 05:15:46.212 UTC",
+        "error_details": {
+          "issue": "Baseline not added to SUM",
+          "sum_version": "1200_b10",
+          "baseline_added": false,
+          "install_set_response": "null or invalid"
+        },
+        "remediation_attempted": {
+          "sum_shutdown": true,
+          "sum_restart": true,
+          "cache_cleanup": true,
+          "retry_attempted": true,
+          "final_result": "Install set response is empty"
+        }
+      },
+      {
+        "failure_type": "CSFE-65658_component_failure_HPE_SR_Gen10",
+        "server_uuid": "39313738-3534-584D-5137-343330374B35",
+        "component": "HPE_SR_Gen10_7.11_A.fwpkg",
+        "baseline": "/rest/firmware-drivers/SSPSY-20241102_2024_1108_9",
+        "timestamp": "2025-01-13 23:47:50.304 UTC",
+        "error_details": {
+          "state": "Exception",
+          "task_result": "UpdateFailed",
+          "observation": "Component state is Exception and taskResult is UpdateFailed. This seems to be a component issue."
+        }
+      },
+      {
+        "failure_type": "CSFE-66924_Install_hung_more_than_2Hrs",
+        "server_uuid": "00323147-0000-5A43-3438-525030303931",
+        "timestamp": "2025-03-07 16:37:46.523 UTC",
+        "error_details": {
+          "issue": "Firmware update is in progress for more than 2hrs",
+          "failure_type": "ABS_SutHungInstallFailed",
+          "update_start_time": "2025-03-07T14:00:23Z",
+          "detection_time": "2025-03-07T16:37:46.523Z"
+        },
+        "completed_components": [
+          {
+            "filename": "ilo7_1.11.00_p26.fwpkg",
+            "name": "Online ROM Flash Firmware Package - HPE Integrated Lights-Out 7",
+            "state": "Complete",
+            "result": {"MessageId": "iLO.2.0.FWFlashTPMOverrideEnabled"}
+          },
+          {
+            "filename": "U68_1.20_02_14_2025.fwpkg",
+            "name": "ROM Flash Firmware Package - HPE ProLiant Compute DL360/DL380/M",
+            "state": "Complete",
+            "result": {"MessageId": "iLO.2.0.SystemResetRequired"}
+          }
+        ],
+        "pending_components": [
+          {
+            "filename": "sut-6.0.0-118.linux.x86_64.rpm",
+            "name": "Integrated Smart Update Tools for Linux x64",
+            "state": "Pending",
+            "updatable_by": ["RuntimeAgent"]
+          }
+        ]
+      }
+    ],
+    "successes": [
+      {
+        "success_type": "Gen10 Offline",
+        "server_uuid": "39313738-3534-584D-5138-313930305242",
+        "server_generation": "Gen10",
+        "server_name": "MXQ65202L5",
+        "server_bay": "8",
+        "spp_used": "Z75SSPSY-2510_2025_0324_79",
+        "update_type": "offline",
+        "timestamp_start": "2025-04-03 16:16:10.042 UTC",
+        "executors": [
+          "applySettingsExecutor_1575",
+          "installsetFingerPrintingQ_11ce",
+          "fwNANDStagingExecutor_15c1"
+        ],
+        "task_id": "/rest/tasks/96469483-05d0-4197-9f8b-34e078a3be01",
+        "key_milestones": {
+          "install_set_generated": "2025-04-03 16:25:41.519 UTC",
+          "staging_completed": "2025-04-03 16:32:47.852 UTC",
+          "state_set_to_staged": "2025-04-03 16:32:48.988 UTC",
+          "install_set_created": "2025-04-03 16:33:12.471 UTC",
+          "install_set_activated": "2025-04-03 16:34:00.182 UTC"
+        },
+        "install_set_id": "fe88e793"
+      },
+      {
+        "success_type": "Gen11 Offline",
+        "server_uuid": "35393350-3133-584D-5133-33343046424D",
+        "server_generation": "Gen11",
+        "server_name": "MXQ65202L4",
+        "server_bay": "9",
+        "spp_used": "Z7550_97736_SYR-2024_1-SSPSY-20240101_2023_1215_50",
+        "update_type": "offline",
+        "timestamp_start": "2025-04-03 15:09:50.042 UTC",
+        "executors": [
+          "applySettingsExecutor_11b6",
+          "installsetFingerPrintingQ_112e",
+          "fwNANDStagingExecutor_11e8"
+        ],
+        "task_id": "/rest/tasks/3a303282-d0eb-4e77-a30f-3454469f3a79",
+        "key_milestones": {
+          "install_set_generated": "2025-04-03 15:15:45.090 UTC",
+          "staging_completed": "2025-04-03 15:20:55.298 UTC",
+          "state_set_to_staged": "2025-04-03 15:20:55.410 UTC",
+          "install_set_created": "2025-04-03 15:21:17.695 UTC",
+          "install_set_activated": "2025-04-03 15:21:36.069 UTC"
+        },
+        "install_set_id": "808e9433"
+      },
+      {
+        "success_type": "Gen10 Online",
+        "server_uuid": "35383350-3837-4D32-3231-323930303231",
+        "server_generation": "Gen10",
+        "server_name": "ILO2M21290021.hst.lab",
+        "spp_used": "SPP2025030000_2025_0319_35",
+        "update_type": "online",
+        "timestamp_start": "2025-03-26 10:08:20.521 UTC",
+        "timestamp_completed": "2025-03-26 10:45:44.140 UTC",
+        "executors": [
+          "applySettingsExecutor_4edd",
+          "installsetFingerPrintingQ_15ea",
+          "fwNANDStagingExecutor_4ee7",
+          "risEventActionExecutor_4f30",
+          "risEventActionExecutor_4f42",
+          "risEventActionExecutor_5054",
+          "installsetFingerPrintingQ_166c"
+        ],
+        "task_id": "/rest/tasks/f3f54f60-108d-409f-9975-abeb50102ee8",
+        "key_milestones": {
+          "install_set_generated": "2025-03-26 10:09:58.829 UTC",
+          "staging_completed": "2025-03-26 10:13:03.010 UTC",
+          "state_set_to_staged": "2025-03-26 10:13:03.675 UTC",
+          "install_set_created": "2025-03-26 10:13:24.362 UTC",
+          "install_set_activated": "2025-03-26 10:13:37.908 UTC",
+          "firmware_install_state_activated": "2025-03-26 10:45:44.140 UTC"
+        },
+        "install_set_id": "1b97ad91",
+        "final_state": "Activated"
+      },
+      {
+        "success_type": "Gen11 Online",
+        "server_uuid": "37363650-3537-4D32-3238-323030305858",
+        "server_generation": "Gen11",
+        "server_name": "ILO2M282000XX.hst.lab",
+        "spp_used": "Gen11SPP2025030000_2025_0319_28",
+        "update_type": "online",
+        "timestamp_start": "2025-03-25 15:48:01.628 UTC",
+        "timestamp_completed": "2025-03-25 16:28:27.534 UTC",
+        "executors": [
+          "applySettingsExecutor_387c",
+          "installsetFingerPrintingQ_dcd",
+          "fwNANDStagingExecutor_38c3",
+          "risEventActionExecutor_37e7",
+          "risEventActionExecutor_3b60",
+          "risEventActionExecutor_3be1",
+          "installsetFingerPrintingQ_e84"
+        ],
+        "task_id": "/rest/tasks/86d8dfa3-faaf-4b7e-8ca5-bd092d15a089",
+        "key_milestones": {
+          "install_set_generated": "2025-03-25 15:54:27.041 UTC",
+          "staging_completed": "2025-03-25 15:57:46.778 UTC",
+          "state_set_to_staged": "2025-03-25 15:57:47.184 UTC",
+          "install_set_created": "2025-03-25 15:58:08.939 UTC",
+          "install_set_activated": "2025-03-25 15:58:24.920 UTC",
+          "firmware_install_state_activated": "2025-03-25 16:28:27.534 UTC"
+        },
+        "install_set_id": "19bc25f0",
+        "final_state": "Activated"
+      }
+    ]
+  }
+}
