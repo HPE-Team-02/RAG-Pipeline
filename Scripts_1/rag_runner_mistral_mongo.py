@@ -9,7 +9,13 @@ from dotenv import load_dotenv
 import os
 from urllib.parse import quote_plus
 
-load_dotenv()
+import os
+
+mongo_user = os.environ.get("MONGO_USER")
+mongo_pass = os.environ.get("MONGO_PASS")
+mongo_host = os.environ.get("MONGO_HOST")
+mongo_port = os.environ.get("MONGO_PORT")
+
 
 def load_index():
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
